@@ -1,0 +1,1 @@
+create most minimum lp, just 1 page do not add anything
