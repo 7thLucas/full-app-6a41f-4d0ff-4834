@@ -1,0 +1,38 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col w-full h-full p-12 gap-8">
+    <div>
+      <span class="text-xs font-semibold tracking-[0.25em] uppercase" style="color:#4F46E5">Core Features</span>
+      <h2 class="mt-2 font-bold text-slate-900" style="font-size:clamp(1.75rem,3.5vw,2.5rem)">What the page does</h2>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="px-4 py-1.5 rounded-full text-sm font-semibold text-white" style="background:#4F46E5">Visitor</span>
+      <span class="px-4 py-1.5 rounded-full text-sm font-medium text-slate-500 border border-slate-200">Owner</span>
+    </div>
+    <div class="sl-grid grid gap-5 flex-1 content-start">
+      <div class="rounded-2xl border border-slate-200 p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4 text-white font-bold" style="background:#4F46E5">1</div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Instant clarity</h3>
+        <p class="text-slate-600 leading-relaxed">One confident headline and a single supporting line — the message lands the moment the page opens.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4 text-white font-bold" style="background:#4F46E5">2</div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">One obvious next step</h3>
+        <p class="text-slate-600 leading-relaxed">A single call-to-action button — no competing links, no navigation to get lost in. One action.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4 text-white font-bold" style="background:#4F46E5">3</div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Reads on any device</h3>
+        <p class="text-slate-600 leading-relaxed">A mobile-first, fully responsive hero that fills the screen cleanly whether on phone or desktop.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4 text-white font-bold" style="background:#4F46E5">4</div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Calm, premium feel</h3>
+        <p class="text-slate-600 leading-relaxed">Generous whitespace, a single indigo accent, and a subtle fade-in on load — flat, quiet, and confident.</p>
+      </div>
+    </div>
+  </div>
+</section>
