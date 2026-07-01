@@ -1,0 +1,36 @@
+<style>
+  .mode-landscape .sl-cover { flex-direction: row; align-items: stretch; }
+  .mode-landscape .sl-cover-text { width: 58%; }
+  .mode-landscape .sl-cover-visual { width: 42%; }
+  .mode-portrait .sl-cover { flex-direction: column; }
+  .mode-portrait .sl-cover-text { width: 100%; }
+  .mode-portrait .sl-cover-visual { width: 100%; min-height: 34%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-cover flex w-full h-full">
+    <div class="sl-cover-text flex flex-col justify-between p-12">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full" style="background:#4F46E5"></span>
+        <span class="text-xs font-semibold tracking-[0.25em] uppercase" style="color:#4F46E5">Landing Page</span>
+      </div>
+      <div>
+        <h1 class="font-extrabold tracking-tight text-slate-900 leading-[1.02]" style="font-size:clamp(2.5rem,6vw,4rem)">
+          One page.<br/>One message.<br/><span style="color:#4F46E5">One action.</span>
+        </h1>
+        <p class="mt-6 text-slate-600 leading-relaxed" style="font-size:clamp(1rem,1.6vw,1.25rem);max-width:34ch">
+          Landing is a deliberately minimal single-page presence — a clean hero, a clear pitch, and one call-to-action. Nothing added.
+        </p>
+      </div>
+      <div class="pt-6 border-t border-slate-200">
+        <data-attribution />
+      </div>
+    </div>
+    <div class="sl-cover-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=minimalist%20premium%20abstract%20composition%2C%20soft%20indigo%20gradient%20shapes%20on%20clean%20white%20background%2C%20calm%2C%20lots%20of%20negative%20space%2C%20editorial"
+        alt="Abstract minimal indigo visual"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</section>
