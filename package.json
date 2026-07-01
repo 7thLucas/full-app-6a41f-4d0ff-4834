@@ -40,7 +40,8 @@
     "tailwind-merge": "^3.5.0",
     "tsx": "^4.20.6",
     "@qb/agentic": "file:./app/modules/agentic",
-    "@qb/judgment": "file:./app/modules/judgment"
+    "@qb/judgment": "file:./app/modules/judgment",
+    "@qb/uploader": "file:./app/modules/uploader"
   },
   "devDependencies": {
     "@react-router/dev": "^7.0.0",
