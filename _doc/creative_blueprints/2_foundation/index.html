@@ -1,0 +1,34 @@
+<style>
+  .mode-landscape .sl-found { flex-direction: row; }
+  .mode-landscape .sl-found-copy { width: 58%; }
+  .mode-landscape .sl-found-visual { width: 42%; }
+  .mode-portrait .sl-found { flex-direction: column; }
+  .mode-portrait .sl-found-copy { width: 100%; }
+  .mode-portrait .sl-found-visual { width: 100%; min-height: 30%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-found flex w-full h-full">
+    <div class="sl-found-copy flex flex-col justify-center gap-8 p-12">
+      <span class="text-xs font-semibold tracking-[0.25em] uppercase" style="color:#4F46E5">The Foundation</span>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">The Problem</h2>
+        <p class="text-slate-800 leading-relaxed" style="font-size:clamp(1.05rem,1.7vw,1.35rem)">
+          Most landing pages arrive bloated — nav bars, endless sections, forms, footers — before there's even a clear message. The noise buries the one thing a visitor should do.
+        </p>
+      </div>
+      <div class="pl-5" style="border-left:3px solid #4F46E5">
+        <h2 class="text-sm font-bold uppercase tracking-wider mb-2" style="color:#4F46E5">The Solution</h2>
+        <p class="text-slate-900 font-medium leading-relaxed" style="font-size:clamp(1.1rem,1.8vw,1.4rem)">
+          One page. A confident headline, a single supporting line, and one call-to-action. Ships fast, reads instantly, and repoints to your real offer in seconds — never a rebuild.
+        </p>
+      </div>
+    </div>
+    <div class="sl-found-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=clean%20minimal%20single%20landing%20page%20hero%20on%20a%20device%2C%20white%20background%2C%20one%20indigo%20call%20to%20action%20button%2C%20lots%20of%20whitespace%2C%20editorial%20product%20shot"
+        alt="Minimal landing page preview"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</section>
