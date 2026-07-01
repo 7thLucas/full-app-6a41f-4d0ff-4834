@@ -28,9 +28,7 @@ Send target is `"*"`; receive does not validate origin — always check `event.d
 - **R2** The four message keys above are frozen strings. Renaming silently disables sync.
 - **R3** `GET /api/configurables` stays unauthenticated, returns `{ configurable_data, configurable_schema }`, responds 200 even when no document exists (empty data + in-code schema).
 - **R4** Exactly one document with `_singleton: true`. Always query with that filter.
-- **R5** **EXACT KEY MATCHING (CRITICAL):** Schema and defaults MUST stay in sync using the EXACT same variable names. Every `fieldName` in `configurables.schema.ts` MUST identically match the key in `defaultConfigurablesData` and `TDefaultConfigurableData`. 
-  - ❌ **BAD:** `fieldName: "appTagline"` in schema, but `tagline: "..."` in defaults. (This causes silent hydration failures).
-  - ✅ **GOOD:** `fieldName: "tagline"` in schema, and `tagline: "..."` in defaults.
+- **R5** Schema and defaults stay in sync — every `formSchema` field needs a matching key in `defaultConfigurablesData` and in `TDefaultConfigurableData`.
 - **R6** `<ConfigurablesProvider>` wraps the entire tree (in `root.tsx`). Don't move below `<Outlet />` or conditionally mount.
 - **R7** `seedConfigurables()` must stay idempotent (early-return on existing singleton).
 - **R8** Every owner-facing value (features, colors, typography/font family, image assets, background, texts, and app config including feature flags) flows through `useConfigurables()`. Hardcoded branding/copy/settings in components violates this template's purpose — add a schema field instead.

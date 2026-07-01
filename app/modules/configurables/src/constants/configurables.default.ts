@@ -62,10 +62,6 @@ export type TFont = {
 export type TDefaultConfigurableData = {
   appName: string;
   logoUrl: string;
-  heroHeadline: string;
-  heroSubhead: string;
-  ctaLabel: string;
-  ctaUrl: string;
   brandColor: TBrandColor;
   font: TFont;
   // Mirror new schema fields here. Example:
@@ -77,57 +73,52 @@ export type TDefaultConfigurableData = {
 export const defaultConfigurablesData: TDefaultConfigurableData = {
   appName: "My App",
   logoUrl: "",
-  heroHeadline: "Everything you need, nothing you don't",
-  heroSubhead:
-    "A clean, simple way to get where you're going. One clear message, one obvious next step.",
-  ctaLabel: "Get Started",
-  ctaUrl: "",
   brandColor: {
     // Base
-    background:        "#ffffff",
-    foreground:        "#111827",
+    background:        "#f4f6f8",
+    foreground:        "#0a0f1e",
     // Card
     card:              "#ffffff",
-    cardForeground:    "#09090b",
+    cardForeground:    "#0a0f1e",
     // Popover
     popover:           "#ffffff",
-    popoverForeground: "#09090b",
+    popoverForeground: "#0a0f1e",
     // Primary
-    primary:           "#4f46e5",
+    primary:           "#0a0f1e",
     primaryForeground: "#ffffff",
     // Secondary
-    secondary:           "#f4f4f5",
-    secondaryForeground: "#18181b",
+    secondary:           "#f7f8fa",
+    secondaryForeground: "#28303c",
     // Muted
-    muted:           "#f4f4f5",
-    mutedForeground: "#6b7280",
+    muted:           "#f7f8fa",
+    mutedForeground: "#7a8493",
     // Accent
-    accent:           "#f4f4f5",
-    accentForeground: "#18181b",
+    accent:           "#eaf0ff",
+    accentForeground: "#2d5be3",
     // Destructive
-    destructive:           "#ef4444",
-    destructiveForeground: "#fafafa",
+    destructive:           "#dc2626",
+    destructiveForeground: "#ffffff",
     // Border / Input / Ring
-    border: "#e4e4e7",
-    input:  "#e4e4e7",
-    ring:   "#4f46e5",
+    border: "#e4e8ef",
+    input:  "#e4e8ef",
+    ring:   "#2d5be3",
     // Charts
-    chart1: "#f97316",
-    chart2: "#0d9488",
-    chart3: "#1e3a5f",
-    chart4: "#d4a017",
-    chart5: "#ea580c",
+    chart1: "#2d5be3",
+    chart2: "#16a34a",
+    chart3: "#f59e0b",
+    chart4: "#b45309",
+    chart5: "#dc2626",
     // Navbar
-    navbarBackground: "#ffffff",
+    navbarBackground: "#f4f6f8",
     // Sidebar
-    sidebarBackground:        "#fafafa",
-    sidebarForeground:        "#3f3f46",
-    sidebarPrimary:           "#2563eb",
+    sidebarBackground:        "#f7f8fa",
+    sidebarForeground:        "#4b5160",
+    sidebarPrimary:           "#2d5be3",
     sidebarPrimaryForeground: "#ffffff",
-    sidebarAccent:            "#f4f4f5",
-    sidebarAccentForeground:  "#18181b",
-    sidebarBorder:            "#e4e4e7",
-    sidebarRing:              "#2563eb",
+    sidebarAccent:            "#ffffff",
+    sidebarAccentForeground:  "#0a0f1e",
+    sidebarBorder:            "#e4e8ef",
+    sidebarRing:              "#2d5be3",
   },
   font: {
     headingFont: "Plus Jakarta Sans",

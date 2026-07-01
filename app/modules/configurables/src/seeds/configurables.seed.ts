@@ -12,24 +12,6 @@ export async function seedConfigurables(): Promise<void> {
     // Check if a singleton already exists
     const existing = await ConfigurableModel.findOne({ _singleton: true });
     if (existing) {
-      let updated = false;
-      const currentData = existing.configurable_data || {};
-      const newData = { ...currentData };
-
-      // Deep merge missing top-level keys from default data
-      for (const [key, value] of Object.entries(defaultConfigurablesData)) {
-        if (newData[key] === undefined) {
-          newData[key] = value;
-          updated = true;
-        }
-      }
-
-      if (updated) {
-        logger.info("Merging missing default configurables data into existing document...");
-        existing.configurable_data = newData;
-        await existing.save();
-        logger.info("✅ Missing configurables merged successfully");
-      }
       return;
     }
 

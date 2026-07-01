@@ -6,41 +6,45 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #111827;
+    --background: #f4f6f8;
+    --foreground: #0a0f1e;
+    --shell: #eef1f4;
     --card: #ffffff;
-    --card-foreground: #09090b;
+    --card-foreground: #0a0f1e;
     --popover: #ffffff;
-    --popover-foreground: #09090b;
-    --primary: #4f46e5;
+    --popover-foreground: #0a0f1e;
+    /* primary = ink black (buttons, hero) */
+    --primary: #0a0f1e;
     --primary-foreground: #ffffff;
-    --secondary: #f4f4f5;
-    --secondary-foreground: #18181b;
-    --muted: #f4f4f5;
-    --muted-foreground: #6b7280;
-    --accent: #f4f4f5;
-    --accent-foreground: #18181b;
-    --destructive: #ef4444;
-    --destructive-foreground: #fafafa;
-    --border: #e4e4e7;
-    --input: #e4e4e7;
-    --ring: #4f46e5;
-    --radius: 0.5rem;
-    --chart-1: #f97316;
-    --chart-2: #0d9488;
-    --chart-3: #1e3a5f;
-    --chart-4: #d4a017;
-    --chart-5: #ea580c;
-    --navbar-background: #ffffff;
-    --sidebar-background: #fafafa;
-    --sidebar-foreground: #3f3f46;
-    --sidebar-primary: #2563eb;
+    --secondary: #f7f8fa;
+    --secondary-foreground: #28303c;
+    --muted: #f7f8fa;
+    --muted-foreground: #7a8493;
+    /* accent = the single deep-blue highlight */
+    --accent: #eaf0ff;
+    --accent-foreground: #2d5be3;
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
+    --border: #e4e8ef;
+    --input: #e4e8ef;
+    --ring: #2d5be3;
+    --radius: 1rem;
+    /* charts / status: green, amber, red, blue */
+    --chart-1: #2d5be3;
+    --chart-2: #16a34a;
+    --chart-3: #f59e0b;
+    --chart-4: #b45309;
+    --chart-5: #dc2626;
+    --navbar-background: #f4f6f8;
+    --sidebar-background: #f7f8fa;
+    --sidebar-foreground: #4b5160;
+    --sidebar-primary: #2d5be3;
     --sidebar-primary-foreground: #ffffff;
-    --sidebar-accent: #f4f4f5;
-    --sidebar-accent-foreground: #18181b;
-    --sidebar-border: #e4e4e7;
-    --sidebar-ring: #2563eb;
-    --heading-font: 'Plus Jakarta Sans', sans-serif;
+    --sidebar-accent: #ffffff;
+    --sidebar-accent-foreground: #0a0f1e;
+    --sidebar-border: #e4e8ef;
+    --sidebar-ring: #2d5be3;
+    --heading-font: 'Inter', sans-serif;
     --text-font: 'Inter', sans-serif;
   }
 
